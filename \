@@ -1,0 +1,218 @@
+Added contribution infom, formatting plugin, maven wrapper, github ci
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# Date:      Tue Jan 30 09:48:32 2024 +0100
+#
+# On branch feature/contribution
+# Your branch is up to date with 'gh-actions/feature/contribution'.
+#
+# Changes to be committed:
+#	new file:   .github/ISSUE_TEMPLATE/1-bug_report.yml
+#	new file:   .github/ISSUE_TEMPLATE/config.yml
+#	new file:   .github/ci-prerequisites.sh
+#	new file:   .github/dependabot.yml
+#	new file:   .github/mvn-settings.xml
+#	new file:   .github/workflows/ci-actions-incremental.yml
+#	new file:   .github/yamllint.conf
+#	modified:   .gitignore
+#	new file:   .mvn/wrapper/maven-wrapper.jar
+#	new file:   .mvn/wrapper/maven-wrapper.properties
+#	modified:   .sdkmanrc
+#	new file:   CONTRIBUTING.md
+#	modified:   bitbucket-pipelines.yml
+#	new file:   dco.txt
+#	new file:   ide/eclipse-format.xml
+#	new file:   ide/eclipse.importorder
+#	modified:   pom.xml
+#	modified:   src/main/java/nl/moj/MojServerApplication.java
+#	modified:   src/main/java/nl/moj/common/assignment/descriptor/AssignmentDescriptor.java
+#	modified:   src/main/java/nl/moj/common/assignment/descriptor/AssignmentFiles.java
+#	modified:   src/main/java/nl/moj/common/assignment/descriptor/Author.java
+#	modified:   src/main/java/nl/moj/common/assignment/descriptor/ExecutionModel.java
+#	modified:   src/main/java/nl/moj/common/assignment/descriptor/Resources.java
+#	modified:   src/main/java/nl/moj/common/assignment/descriptor/ScoringRules.java
+#	modified:   src/main/java/nl/moj/common/assignment/descriptor/Sources.java
+#	modified:   src/main/java/nl/moj/common/assignment/descriptor/TestResources.java
+#	modified:   src/main/java/nl/moj/common/assignment/descriptor/TestSources.java
+#	modified:   src/main/java/nl/moj/common/assignment/service/AssignmentDescriptorService.java
+#	modified:   src/main/java/nl/moj/common/bootstrap/BootstrapService.java
+#	modified:   src/main/java/nl/moj/common/config/AsyncConfiguration.java
+#	modified:   src/main/java/nl/moj/common/config/CommonConfig.java
+#	modified:   src/main/java/nl/moj/common/config/Directories.java
+#	modified:   src/main/java/nl/moj/common/config/properties/Competition.java
+#	modified:   src/main/java/nl/moj/common/config/properties/Languages.java
+#	modified:   src/main/java/nl/moj/common/config/properties/Limits.java
+#	modified:   src/main/java/nl/moj/common/config/properties/MojServerProperties.java
+#	modified:   src/main/java/nl/moj/common/config/properties/Runtime.java
+#	modified:   src/main/java/nl/moj/common/messages/JMSCompileRequest.java
+#	modified:   src/main/java/nl/moj/common/messages/JMSCompileResponse.java
+#	modified:   src/main/java/nl/moj/common/messages/JMSFile.java
+#	modified:   src/main/java/nl/moj/common/messages/JMSRequest.java
+#	modified:   src/main/java/nl/moj/common/messages/JMSResponse.java
+#	modified:   src/main/java/nl/moj/common/messages/JMSSubmitRequest.java
+#	modified:   src/main/java/nl/moj/common/messages/JMSSubmitResponse.java
+#	modified:   src/main/java/nl/moj/common/messages/JMSTestCase.java
+#	modified:   src/main/java/nl/moj/common/messages/JMSTestCaseResult.java
+#	modified:   src/main/java/nl/moj/common/messages/JMSTestRequest.java
+#	modified:   src/main/java/nl/moj/common/messages/JMSTestResponse.java
+#	modified:   src/main/java/nl/moj/common/storage/StorageService.java
+#	modified:   src/main/java/nl/moj/common/util/JavaVersionUtil.java
+#	modified:   src/main/java/nl/moj/common/util/ZipUtils.java
+#	modified:   src/main/java/nl/moj/modes/ControllerConfig.java
+#	modified:   src/main/java/nl/moj/modes/Mode.java
+#	modified:   src/main/java/nl/moj/modes/SingleConfig.java
+#	modified:   src/main/java/nl/moj/modes/WorkerConfig.java
+#	modified:   src/main/java/nl/moj/modes/condition/ConditionalOnMode.java
+#	modified:   src/main/java/nl/moj/modes/condition/IsModeCondition.java
+#	modified:   src/main/java/nl/moj/server/AssignmentResourceController.java
+#	modified:   src/main/java/nl/moj/server/ErrorController.java
+#	modified:   src/main/java/nl/moj/server/GameController.java
+#	modified:   src/main/java/nl/moj/server/RemoteWorkerController.java
+#	modified:   src/main/java/nl/moj/server/ServerStartupListener.java
+#	modified:   src/main/java/nl/moj/server/TaskControlController.java
+#	modified:   src/main/java/nl/moj/server/assignment/model/Assignment.java
+#	modified:   src/main/java/nl/moj/server/assignment/model/AssignmentDescriptorValidationResult.java
+#	modified:   src/main/java/nl/moj/server/assignment/repository/AssignmentRepository.java
+#	modified:   src/main/java/nl/moj/server/assignment/service/AssignmentDescriptorValidator.java
+#	modified:   src/main/java/nl/moj/server/assignment/service/AssignmentService.java
+#	modified:   src/main/java/nl/moj/server/assignment/service/AssignmentServiceException.java
+#	modified:   src/main/java/nl/moj/server/authorization/Role.java
+#	modified:   src/main/java/nl/moj/server/bootstrap/controller/BootstrapController.java
+#	modified:   src/main/java/nl/moj/server/bootstrap/filter/BootstrapFilter.java
+#	modified:   src/main/java/nl/moj/server/competition/model/Competition.java
+#	modified:   src/main/java/nl/moj/server/competition/model/CompetitionAssignment.java
+#	modified:   src/main/java/nl/moj/server/competition/model/CompetitionSession.java
+#	modified:   src/main/java/nl/moj/server/competition/repository/CompetitionRepository.java
+#	modified:   src/main/java/nl/moj/server/competition/repository/CompetitionSessionRepository.java
+#	modified:   src/main/java/nl/moj/server/competition/service/CompetitionService.java
+#	modified:   src/main/java/nl/moj/server/competition/service/CompetitionServiceException.java
+#	modified:   src/main/java/nl/moj/server/compiler/model/CompileAttempt.java
+#	modified:   src/main/java/nl/moj/server/compiler/repository/CompileAttemptRepository.java
+#	modified:   src/main/java/nl/moj/server/compiler/service/CompileAttemptRegisterException.java
+#	modified:   src/main/java/nl/moj/server/compiler/service/CompileRequest.java
+#	modified:   src/main/java/nl/moj/server/compiler/service/CompileService.java
+#	modified:   src/main/java/nl/moj/server/config/ArtemisConfig.java
+#	modified:   src/main/java/nl/moj/server/config/MetricsConfiguration.java
+#	modified:   src/main/java/nl/moj/server/config/WebConfiguration.java
+#	modified:   src/main/java/nl/moj/server/config/WebSecurityConfiguration.java
+#	modified:   src/main/java/nl/moj/server/config/WebSocketConfiguration.java
+#	modified:   src/main/java/nl/moj/server/feedback/FeedbackController.java
+#	modified:   src/main/java/nl/moj/server/feedback/FileSubmission.java
+#	modified:   src/main/java/nl/moj/server/feedback/Submission.java
+#	modified:   src/main/java/nl/moj/server/feedback/model/TeamFeedback.java
+#	modified:   src/main/java/nl/moj/server/feedback/service/FeedbackService.java
+#	modified:   src/main/java/nl/moj/server/message/model/CompilingEnded.java
+#	modified:   src/main/java/nl/moj/server/message/model/CompilingStarted.java
+#	modified:   src/main/java/nl/moj/server/message/model/MessageType.java
+#	modified:   src/main/java/nl/moj/server/message/model/StartAssignmentFailedMessage.java
+#	modified:   src/main/java/nl/moj/server/message/model/StartAssignmentMessage.java
+#	modified:   src/main/java/nl/moj/server/message/model/StopAssignmentMessage.java
+#	modified:   src/main/java/nl/moj/server/message/model/SubmitEnded.java
+#	modified:   src/main/java/nl/moj/server/message/model/SubmitStarted.java
+#	modified:   src/main/java/nl/moj/server/message/model/TeamCompileFeedbackMessage.java
+#	modified:   src/main/java/nl/moj/server/message/model/TeamStartedTestingMessage.java
+#	modified:   src/main/java/nl/moj/server/message/model/TeamSubmitFeedbackMessage.java
+#	modified:   src/main/java/nl/moj/server/message/model/TeamTestFeedbackMessage.java
+#	modified:   src/main/java/nl/moj/server/message/model/TestingEnded.java
+#	modified:   src/main/java/nl/moj/server/message/model/TestingStarted.java
+#	modified:   src/main/java/nl/moj/server/message/model/TimerSyncMessage.java
+#	modified:   src/main/java/nl/moj/server/message/service/JmsMessageListener.java
+#	modified:   src/main/java/nl/moj/server/message/service/MessageService.java
+#	modified:   src/main/java/nl/moj/server/metrics/MetricsService.java
+#	modified:   src/main/java/nl/moj/server/metrics/MetricsVO.java
+#	modified:   src/main/java/nl/moj/server/metrics/MojMetricsPlugin.java
+#	modified:   src/main/java/nl/moj/server/rankings/RankingsController.java
+#	modified:   src/main/java/nl/moj/server/rankings/model/Ranking.java
+#	modified:   src/main/java/nl/moj/server/rankings/model/RankingHeader.java
+#	modified:   src/main/java/nl/moj/server/rankings/service/RankingsService.java
+#	modified:   src/main/java/nl/moj/server/runtime/AssignmentRuntime.java
+#	modified:   src/main/java/nl/moj/server/runtime/AssignmentStartException.java
+#	modified:   src/main/java/nl/moj/server/runtime/CompetitionRuntime.java
+#	modified:   src/main/java/nl/moj/server/runtime/JavaAssignmentFileResolver.java
+#	modified:   src/main/java/nl/moj/server/runtime/ScoreService.java
+#	modified:   src/main/java/nl/moj/server/runtime/TaskTimer.java
+#	modified:   src/main/java/nl/moj/server/runtime/TimersRuntime.java
+#	modified:   src/main/java/nl/moj/server/runtime/model/ActiveAssignment.java
+#	modified:   src/main/java/nl/moj/server/runtime/model/AssignmentFile.java
+#	modified:   src/main/java/nl/moj/server/runtime/model/AssignmentFileType.java
+#	modified:   src/main/java/nl/moj/server/runtime/model/AssignmentResult.java
+#	modified:   src/main/java/nl/moj/server/runtime/model/AssignmentStatus.java
+#	modified:   src/main/java/nl/moj/server/runtime/model/CompetitionState.java
+#	modified:   src/main/java/nl/moj/server/runtime/model/Score.java
+#	modified:   src/main/java/nl/moj/server/runtime/model/TeamAssignmentStatus.java
+#	modified:   src/main/java/nl/moj/server/runtime/repository/AssignmentResultRepository.java
+#	modified:   src/main/java/nl/moj/server/runtime/repository/AssignmentStatusRepository.java
+#	modified:   src/main/java/nl/moj/server/runtime/repository/TeamAssignmentStatusRepository.java
+#	modified:   src/main/java/nl/moj/server/runtime/service/AssignmentStatusService.java
+#	modified:   src/main/java/nl/moj/server/submit/SubmitController.java
+#	modified:   src/main/java/nl/moj/server/submit/SubmitFacade.java
+#	modified:   src/main/java/nl/moj/server/submit/json/SourceMessageDeserializer.java
+#	modified:   src/main/java/nl/moj/server/submit/model/SourceMessage.java
+#	modified:   src/main/java/nl/moj/server/submit/model/SubmitAttempt.java
+#	modified:   src/main/java/nl/moj/server/submit/repository/SubmitAttemptRepository.java
+#	modified:   src/main/java/nl/moj/server/submit/service/SubmitRequest.java
+#	modified:   src/main/java/nl/moj/server/submit/service/SubmitResult.java
+#	modified:   src/main/java/nl/moj/server/submit/service/SubmitService.java
+#	modified:   src/main/java/nl/moj/server/teams/controller/TeamController.java
+#	modified:   src/main/java/nl/moj/server/teams/model/Team.java
+#	modified:   src/main/java/nl/moj/server/teams/repository/TeamRepository.java
+#	modified:   src/main/java/nl/moj/server/teams/service/TeamService.java
+#	modified:   src/main/java/nl/moj/server/test/model/TestAttempt.java
+#	modified:   src/main/java/nl/moj/server/test/model/TestCase.java
+#	modified:   src/main/java/nl/moj/server/test/repository/TestAttemptRepository.java
+#	modified:   src/main/java/nl/moj/server/test/repository/TestCaseRepository.java
+#	modified:   src/main/java/nl/moj/server/test/service/TestRequest.java
+#	modified:   src/main/java/nl/moj/server/test/service/TestService.java
+#	modified:   src/main/java/nl/moj/server/user/controller/UserController.java
+#	modified:   src/main/java/nl/moj/server/user/model/User.java
+#	modified:   src/main/java/nl/moj/server/user/repository/UserRepository.java
+#	modified:   src/main/java/nl/moj/server/user/service/UserService.java
+#	modified:   src/main/java/nl/moj/server/util/CollectionUtil.java
+#	modified:   src/main/java/nl/moj/server/util/CompletableFutures.java
+#	modified:   src/main/java/nl/moj/server/util/HttpUtil.java
+#	modified:   src/main/java/nl/moj/server/util/JMSResponseHelper.java
+#	modified:   src/main/java/nl/moj/server/util/JsonUtil.java
+#	modified:   src/main/java/nl/moj/server/util/NamedThreadFactory.java
+#	modified:   src/main/java/nl/moj/server/util/PathUtil.java
+#	modified:   src/main/java/nl/moj/server/util/RandomString.java
+#	modified:   src/main/java/nl/moj/server/util/TransactionHelper.java
+#	modified:   src/main/java/nl/moj/worker/ExecutionService.java
+#	modified:   src/main/java/nl/moj/worker/OperationListener.java
+#	modified:   src/main/java/nl/moj/worker/WorkerService.java
+#	modified:   src/main/java/nl/moj/worker/WorkerStartupListener.java
+#	modified:   src/main/java/nl/moj/worker/config/WebSecurityConfig.java
+#	modified:   src/main/java/nl/moj/worker/controller/ControllerClient.java
+#	modified:   src/main/java/nl/moj/worker/controller/LocalControllerClient.java
+#	modified:   src/main/java/nl/moj/worker/controller/RemoteControllerClient.java
+#	modified:   src/main/java/nl/moj/worker/java/ClasspathService.java
+#	modified:   src/main/java/nl/moj/worker/java/JavaService.java
+#	modified:   src/main/java/nl/moj/worker/java/compile/CompileRunnerService.java
+#	modified:   src/main/java/nl/moj/worker/java/test/TestCaseOutput.java
+#	modified:   src/main/java/nl/moj/worker/java/test/TestOutput.java
+#	modified:   src/main/java/nl/moj/worker/java/test/TestRunnerService.java
+#	modified:   src/main/java/nl/moj/worker/util/LengthLimitedOutputCatcher.java
+#	modified:   src/main/java/nl/moj/worker/workspace/Workspace.java
+#	modified:   src/main/java/nl/moj/worker/workspace/WorkspaceService.java
+#	modified:   src/test/java/nl/moj/server/CollectionUtilTest.java
+#	modified:   src/test/java/nl/moj/server/DbUtil.java
+#	modified:   src/test/java/nl/moj/server/TestUtil.java
+#	modified:   src/test/java/nl/moj/server/assignment/AssignmentServiceTest.java
+#	modified:   src/test/java/nl/moj/server/authorization/RoleTest.java
+#	modified:   src/test/java/nl/moj/server/bootstrap/controller/BootstrapControllerTest.java
+#	modified:   src/test/java/nl/moj/server/bootstrap/filter/BootstrapFilterTest.java
+#	modified:   src/test/java/nl/moj/server/runtime/AssignmentDurationTest.java
+#	modified:   src/test/java/nl/moj/server/runtime/AssignmentResourceTest.java
+#	modified:   src/test/java/nl/moj/server/runtime/AssignmentSubmitAbortTest.java
+#	modified:   src/test/java/nl/moj/server/runtime/AssignmentSubmitTest.java
+#	modified:   src/test/java/nl/moj/server/runtime/BaseRuntimeTest.java
+#	modified:   src/test/java/nl/moj/server/runtime/CustomSecurityPolicyTest.java
+#	modified:   src/test/java/nl/moj/server/runtime/ExecutionOrderAssignmentTest.java
+#	modified:   src/test/java/nl/moj/server/runtime/LateSignupTest.java
+#	modified:   src/test/java/nl/moj/server/runtime/NonExistingJDKTest.java
+#	modified:   src/test/java/nl/moj/server/runtime/RankingServiceTest.java
+#	modified:   src/test/java/nl/moj/server/runtime/ScoreServiceTest.java
+#	modified:   src/test/java/nl/moj/server/runtime/TeamServiceTest.java
+#	modified:   src/test/java/nl/moj/server/support/TestJmsListener.java
+#
